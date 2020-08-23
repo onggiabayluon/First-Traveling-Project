@@ -1,0 +1,242 @@
+@media (min-width: 760px) {
+    .hero-text ul li {
+      visibility: visible;
+    }
+  
+    .info-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 3rem;
+      align-items: center;
+      text-align: left;
+    }
+  
+    .info-container img {
+      justify-self: end;
+      width: 75%;
+    }
+  
+    .text-container p:nth-of-type(1) {
+      font-size: 1rem;
+      width: 75%;
+      margin: 1rem 0;
+    }
+  
+    .text-container p:nth-of-type(1) {
+      font-size: 0.86rem;
+    }
+  }
+  @media (max-width: 1125px) {
+    .sky,
+    .building_1,
+    .building_2,
+    .building_3,
+    .hero-text {
+      background-size: contain;
+    }
+    html,body {
+      font-size: 15px;
+    }
+    .main-text-container{
+      top: 35%;
+    }
+    .hero-text a i {
+      right: 7rem;
+      top: 9rem;
+    }
+    .hero-text h2 img {
+      left: 7rem;
+      top: 9rem;
+    }
+    .hero-text ul li {
+        visibility: hidden;
+      }
+      .swiper-slide .swiper-slide-active{
+        width: 450px;
+      }
+      .swiper-slide-active{
+          visibility: unset;
+          transform: scale(1.2) !important;
+          margin-left: -200px;
+      }
+      .swiper-slide {
+        visibility: visible;
+        /* width: 450px !important; */
+        height: 350px;
+        margin-right: -100px;
+        -webkit-box-reflect: unset;
+      }
+      .swiper-slide img{     
+        width: 450px;
+        height: 350px;
+      }
+      .swiper-container {
+        padding-top: 40px; 
+      }
+      .swiper-slide-active .colorBlending{
+        width: 450px;
+      }
+      .third-section {
+        height: 180vh;
+      }
+      .Wallofcolor {
+        height: 180vh;
+      }
+      .third-nav {
+        position: relative;
+        text-align: center;
+        margin: 100px 0;
+        top: 0;
+        left: 0;
+        transform: none;
+      }
+      .container{
+        height: 165vh;
+      }
+  }
+  @media only screen and (max-height: 1024px){
+    .container {
+      height: 72vh;
+  }
+  .Wallofcolor {
+    height: 110vh;
+  }
+  .third-section {
+    height: 110vh;
+  }
+  }
+  @media only screen and (max-width: 770px) {
+  .main-text-container {
+      top: 50%;
+  }
+  .hero-text h2 img {
+    left: 3rem;
+    top: 2rem;
+  }
+  .hero-text a i {
+    right: 5rem;
+    top: 2rem;
+  }
+  .main-text-container p:nth-child(1) {
+    letter-spacing: 0.5rem;
+  }
+  /* .third-section {
+    height: 230vh;
+  }
+  .Wallofcolor{
+    height: 230vh;
+  }
+  .third-nav{
+    margin-bottom: 20px;
+  } */
+  .container{
+    margin-top: -200px;
+  }
+  .swiper-slide-active .colorBlending {
+    transition: none;
+  }
+  .swiper-slide-active {
+    transform: scale(1.1) !important;
+    margin-left: -165px;
+  }
+  .sky,
+  .building_1,
+  .building_2,
+  .building_3,
+  .hero-text {
+    background-size: contain;
+  }
+  .sky {
+    transform: translateZ(-300px) scale(6);
+  }
+  .building_1 {  
+    transform: translateZ(-262.5px) scale(5.5);
+  }
+  
+  .building_2 {
+    transform: translateZ(-200px) scale(3);
+  }
+  
+  .building_3 {
+    transform: translateZ(-100px) scale(4);
+  }
+  .fourth-section {
+    height: 17vh;
+    display: block;
+  }
+  .text-container{
+    grid-template-columns: 1fr 1fr;
+  }
+  .text-container h2 {
+    left: 0rem;
+  }
+  .text-container p {
+    left: -0.1rem;
+    font-size: 1.3rem;
+  }
+  .fourth-section-icon {
+    width: 100%;
+  }
+}
+  @media only screen and (max-width: 600px) {
+    .swiper-slide-active{
+      transform: scale(1) !important;
+  }
+  .swiper-button-next {
+    --swiper-navigation-size: 1.5rem;
+    left: 26%;
+    top: 19.5%;
+  }
+  .swiper-pagination {
+    bottom: 27vh !important;
+  }
+  .swiper-button-prev {
+    --swiper-navigation-size: 1.3rem;
+    left: 5%;
+    top: 23%;
+  }
+  .header h2 {
+    font-size: 2rem;
+    left: 1.2rem;
+    top: 5.2rem;
+  }
+  .header ul li:nth-of-type(1), .header ul li:nth-of-type(2) {
+    visibility: hidden;
+  }
+  .header ul li {
+    margin-top: 3.5rem;
+  }
+  .fourth-section {
+    height: 22vh;
+    display: block;
+  }
+  .text-container{
+    grid-template-columns: 1fr 1fr;
+  }
+  .text-container h2 {
+    left: 0rem;
+  }
+  .text-container p {
+    left: -0.1rem;
+    font-size: 1.3rem;
+  }
+  .text-container span {
+    display: block;
+    margin-top: -8px;
+  }
+  .fourth-section-icon {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .swiper-button-next {
+    top: 78%;
+  }
+  .swiper-button-prev {
+    top: 77.6%;
+  }
+}
+ 
+  
+  
+  

@@ -4,19 +4,82 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2019</title>
+  <title>Night Travel</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./querry.css">
-  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/querry.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="icon" 
+     type="image/png" 
+     href="./img/icon2/Website logo/website-logo_white_06_04_04.png">
 </head>
 
 <body>
+  <!--START nav bar--><nav class="navbar">
+    <ul class="navbar-nav">
+       <!-- LOGO --> <li class="logo">
+        <a href="#" class="nav-link">
+          <span class="link-text logo-text">Night Travel</span>
+          <svg aria-hidden="true" 
+          focusable="false" 
+          data-prefix="fad" 
+          data-icon="angle-double-right" 
+          role="img"
+          xmlns="http://www.w3.org/2000/svg" 
+          viewBox="0 0 448 512"
+          class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x">
+            <g class="fa-group">
+              <path 
+              fill="currentColor"
+              d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
+              class="fa-secondary"></path>
+              <path fill="currentColor"
+              d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
+              class="fa-primary"></path>
+            </g>
+          </svg>
+          
+        </a>
+      </li>
+      </a> <!-- LOGO -->
+
+     <!-- item nav --> <li class="nav-item">
+        <a href="#home" class="nav-link">
+          <i class="fa fa-home fa-3x" aria-hidden="true"></i>
+          <span class="link-text">Home</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#trip" class="nav-link">
+          <i class="fa fa-plane fa-3x" aria-hidden="true"></i>
+          <span class="link-text">Preview</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#book-now" class="nav-link">
+          <i class="fa fa-shopping-cart fa-3x" aria-hidden="true"></i>
+          <span class="link-text">Book now</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#contact" class="nav-link">
+          <i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
+          <span class="link-text">Contact</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#home" class="nav-link">
+          <i class="fa fa-arrow-up fa-3x" aria-hidden="true"></i>
+          <span class="link-text">Go To Top</span>
+        </a>
+      </li> <!-- item nav -->
+    </ul>
+  </nav><!--END nav bar-->
+
 <!-- START SECTION NUM 1 for parallax-->
-  <div class="wrapper" id="top-reset">
+  <div class="wrapper">
     <div class="parallax__group hero-container">
       <div class="parallax__layer sky"></div>
       <div class="parallax__layer building_1"></div>
@@ -25,38 +88,46 @@
       <div class="parallax__layer building_4"></div>
       <!-- START main-text-->
       <div class="parallax__layer hero-text">
-        <header id="top">
-          <h2><img src="./icon2/website-logo_white_06_04_04.png" alt="logo"></h2>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Trip</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#third">Book Now</a></li>
-          </ul>
-          <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
-        </header>
+        <!-- TOPNAVIGATION !-->
+          <header class="topnav">
+            <!-- LOGO + LOGOTEXT!-->
+            <div class="logoweb-text">
+              <a href="#" class="weblogo"><img src="./img/icon2/Website logo/website-logo_white_06_04_04.png" alt="img"></a>
+              <h2 class="webtext">Night Travel</h2> <!-- /END LOGO + LOGOTEXT !-->
+            </div>
+              <!-- SUB TEXT-->
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Trending</a></li>
+                  <li><!--Search bar-->
+                    <div class="search-box">
+                     <input type="text" name="" class="search-txt" placeholder="Search here..."/>
+                     <a class="search-btn">
+                      <i class="fa fa-search fa-2x"></i>
+                     </a><!-- /END Search bar-->
+                   </li>
+                </ul><!-- /END SUB TEXT-->
+           </header> <!-- /END TOPNAVIGATION !-->
 
         <div class="main-text-container">
           <p> Trending this week</p>
           <h1> VIETNAM </h1>
-          <p> Night Travel</p>
-          <!-- <a href="#secondary" class="btn2">Get Started</a> -->
-            <a href="#secondary" class="arrow-down-movement">
-              <i class="fa fa-angle-double-down fa-4x arrow-down" aria-hidden="true"></i>
-            </a>
+          <p> Vietnam's reinvention as Southeast Asia's most exciting 
+            tourist destination has long since been complete.</br>
+            <span>The country is now a hotspot for foodies.</span>
+            <div class="learn-more-btn"> <a href="#">Learn more</a> </div>
+          </p>
+        </div> <!-- /END main-text-->
+        <div class="arrow-animation"> 
+          <a href="#trip"><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></a>
         </div>
-        <!-- END main-text-->
-        <!-- START arrow down-->
-        
-        <!-- END arrow down-->
         <footer>
             <!-- <a href="https://github.com/KiaanCastillo" target="_blank"><i class="icon ion-logo-github"></i></a> -->
         </footer>
       </div>
-    </div>
-<!-- END SECTION NUM 1 for parallax-->
+    </div><!-- /END SECTION NUM 1 for parallax-->
 <!-- START SECTION NUM 2 section -->
-    <section class="secondary-section" id="secondary">
+    <section class="secondary-section" id="trip">
       <div class="header">
           <h2>Night Life</h2>
           <ul>
@@ -73,13 +144,28 @@
             <!-- Swiper -->
       <div class="swiper-container">
         <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/london street.jpg" alt="3">
+            <div class="colorBlending">
+              <div class="textCard">
+                <p> Suggested places to visit</p>
+                <h3> Oxford Street, London</h3>
+                <h4> 
+                  Oxford Street is the centre of London’s retail scene and is home to 
+                  a huge list of high-end brands and luxury boutiques. 
+                  If you’re planning to treat yourself while at the Montcalm Hotel Chiswell Street, 
+                  there are fewer places better than Oxford Street. </h4>
+              </div>
+            </div>
+          </div>
             <div class="swiper-slide">
-              <img src="./img/long den hoi an.jpg" alt="3">
+              <img src="./img/Oxford Street.jpg" alt="3">
               <div class="colorBlending">
                 <div class="textCard">
                   <p> Suggested places to visit</p>
-                  <h3> Hoi An, VietNam</h3>
-                  <h4> Night lights</h4>
+                  <h3> Oxford Street, London</h3>
+                  <h4> From Gucci to Adidas, 
+                    you can fill your bags with all kinds of treasures as you stroll down Oxford Street. </h4>
                 </div>
               </div>
             </div>
@@ -89,17 +175,7 @@
                 <div class="textCard">
                   <p> Suggested places to visit</p>
                   <h3> Hoi An, VietNam</h3>
-                  <h4> Market places </h4>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/wallpaperflare.com_wallpaper (1).jpg" alt="3">
-              <div class="colorBlending">
-                <div class="textCard">
-                  <p> Suggested places to visit</p>
-                  <h3> Hoi An, VietNam</h3>
-                  <h4> Food </h4>
+                  <h4 class="gradient-color"> Market places </h4>
                 </div>
               </div>
             </div>
@@ -109,7 +185,17 @@
                 <div class="textCard">
                   <p> Suggested places to visit</p>
                   <h3> Hoi An, VietNam</h3>
-                  <h4> Scenery </h4>
+                  <h4 class="gradient-color"> Scenery </h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banh mi.jpg" alt="3">
+              <div class="colorBlending">
+                <div class="textCard">
+                  <p> Suggested places to visit</p>
+                  <h3> Hoi An, VietNam</h3>
+                  <h4 class="gradient-color"> Food </h4>
                 </div>
               </div>
             </div>
@@ -122,10 +208,9 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-    </section>
-    <!-- END SECTION NUM 2 -->
+    </section><!-- /END SECTION NUM 2 -->
     <!-- START section NUM 3-->
-    <section class="third-section" >
+    <section class="third-section" ">
       <div class="Wallofcolor">
         <div class="third-nav">
           <!-- <h2> Pricing plans</h2> -->
@@ -150,7 +235,7 @@
                       PRICES: <span style="text-decoration: line-through;">12 USD</span> 
                         <span style="color: rgba(250, 56, 56);"> 9.99 USD</span>
                     </p>
-                    <a href="#third" class="btn" id="third"> Book Now</a>
+                    <a href="#third" class="btn" id="book-now"> Book Now</a>
                 </div>
             </div>
             <div class="card">
@@ -197,7 +282,7 @@
     </section>
 <!-- END section NUM 3-->
 <!--Start section Num4-->
-    <section class="fourth-section">
+    <section class="fourth-section" id="contact">
       <div class="text-container">
         <h2> Night <span>Travel</span></h2>
         <p> Copyright &copy; .All rights reserved</p>
@@ -218,14 +303,14 @@
 
   <!-- ALL SCRIPS HERE-->
   <!-- Swiper JS -->
-  <script src="../package/swiper-bundle.min.js"></script>
+  <!-- <script src="../package/swiper-bundle.min.js"></script> -->
   <!-- START Script for swiper-->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper-container', {
       effect: 'coverflow',
-      spaceBetween: 150,
+      spaceBetween: 50,
       grabCursor: true,
       centeredSlides: true,
       slidesPerView: 2,
@@ -244,6 +329,16 @@
       },
       pagination: {
         el: '.swiper-pagination',
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 50
+        },
       },
     });
   </script>
@@ -251,8 +346,7 @@
   <!-- START Default scripts-->
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
-  <script src="./jquery.waypoints.min.js"></script>
-  <script src="./scripts.js"></script>
+  <script src="./script/scripts.js"></script>
 
 </body>
 

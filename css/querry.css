@@ -84,9 +84,9 @@
   }
   
   @media only screen and (max-width: 770px) {
-    .search-box {
+    /* .search-box {
       visibility: hidden;
-   }
+   } */
   .main-text-container {
     transform: translate(-34%, -50%)
   }
@@ -249,8 +249,9 @@
     width: 100vw !important;
     height: 5rem;
     z-index: 999;
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.5);
   }
-
   .logo {
     display: none;
   }
@@ -312,10 +313,7 @@
   .main-text-container h1 {
     font-size: 3.5rem;
   }
-  .arrow-animation {
-    left: 50%;
-    transform: translate(-50%, 68%);
-  }
+
   .swiper-slide{
     visibility: hidden;
     transition: none;
@@ -324,5 +322,46 @@
     visibility: visible;
     transition: none;
     transform: scale(1) !important;
+  }
+}
+
+
+/*=================== HEIGHT ===================*/
+@media only screen and (max-height: 1024px) and (max-width:1024px){
+  *{
+    font-size: 20px;
+  }
+  .main-text-container .learn-more-btn {
+    width: 180px;
+  }
+
+  .topnav ul li:nth-of-type(3) {
+    visibility: visible;
+  }
+  .arrow-animation{
+    transform: translate(-42%, 300%);
+  }
+  .main-text-container .learn-more-btn {
+    white-space: nowrap;
+  }
+}
+@media only screen and (max-height: 823px) and (max-width:1024px){
+  .arrow-animation{
+    transform: translate(-42%, 200%);
+  }
+
+  .secondary-section {
+    height: 80vh;
+  }
+  .topnav .webtext {
+    font-size: 1.3rem;
+  }
+  .topnav .logoweb-text {
+    margin-left: 5.5rem;
+  }
+}
+@media only screen and (max-height: 450px) and (max-width:1024px){
+  .arrow-animation{
+    transform: translate(-42%, 50%);
   }
 }

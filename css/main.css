@@ -19,12 +19,12 @@ body {
   background-color: #000;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 16px;  
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-body{
-   overflow-x: hidden;
-}
+
 a {
   text-decoration: none;
   color: #fff;
@@ -62,8 +62,14 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
+  
 }
-
+.parallax__layer .sky {
+  transform: translateZ(0);
+}
+.parallax__layer .building_4 {
+  transform: translateZ(-1px);
+}
 
 
 .sky {
@@ -115,6 +121,8 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  animation-name: moveInbot;
+  animation-duration: 2s;
 }
 
   .topnav ul{
@@ -231,6 +239,8 @@ a {
 .fa-angle-down{
   color: rgba(255, 255, 255, 0.363);
   font-size: 2rem;
+  animation-name: moveIntop;
+  animation-duration: 2s;
 }
 .fa-angle-down:hover{
   color: rgba(255, 255, 255, 0.8) ;
@@ -244,14 +254,15 @@ a {
   transform: translate(-50%, 25%);
   text-align: center;
   cursor: pointer;
+ 
 }
 .arrow-animation{
   animation: mymove 3s infinite;
   animation-direction: alternate-reverse;
 }
 @keyframes mymove{
-  from {top: 22rem;}
-  to {top: 24rem;}
+  from {top: 20rem;}
+  to {top: 21.5rem;}
 }
 /* ---------------------- main-text-container ----------------------*/
 
@@ -271,6 +282,7 @@ a {
   margin-bottom: -3.9px;
   font-weight: 700;
   letter-spacing: 0.2rem;
+  animation: moveInleft 2s ease-out;
 }
 
 .main-text-container h1{
@@ -278,6 +290,8 @@ a {
   font-weight: 700;
   letter-spacing: 0.5rem;
   margin-bottom: 5px;
+  animation-name: moveInleft;
+  animation-duration: 2s;
 }
 .main-text-container p:nth-child(3){
   width: 442px;
@@ -285,10 +299,14 @@ a {
   margin-bottom: 3rem;
   font-weight: normal;
   color: rgba(255, 255, 255, 0.8);
+  animation-name: moveInright;
+  animation-duration: 2s;
 }
 .main-text-container span{
   display: inline-block;
   margin-top: 0.5rem;
+  animation-name: moveInright;
+  animation-duration: 2s;
 }
 .main-text-container a:nth-child(4){
   text-transform: uppercase;
@@ -304,6 +322,8 @@ a {
   border-radius: 0.2rem;
   padding: 0.75rem 1.25rem;
   transition: all 0.3s ease-in-out; 
+  animation-name: moveInright;
+  animation-duration: 2s;
 }
 .main-text-container .learn-more-btn:hover{
   background: #fff;
@@ -829,6 +849,8 @@ a {
     z-index: 999;
     backdrop-filter:blur(10px);
     border-right: 1px solid rgb(255, 255, 255, 0.3);
+    animation-name: moveInright;
+    animation-duration: 3s;
 }
 .navbar-nav{
     list-style: none;
@@ -929,4 +951,53 @@ a {
 }
 .navbar:hover .logo svg{
     margin-left: 13rem;
+}
+
+/*============ANIMATION==============*/
+@keyframes moveInbot{
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveIntop{
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveInright{
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInleft{
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

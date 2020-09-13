@@ -15,7 +15,7 @@
             font-size: 2rem;
         }
     }
-    
+   
     .main-text-container{
         text-align: center;
         left: 50% !important;
@@ -41,24 +41,31 @@
     }
     /* SERCH BAR */
     .search-txt {
-        width: 0px;
+        width: 0%;
+        opacity: 1;
+        position: relative;
+        top: 0rem;
+        right: 2rem;
     }
     .fa > .search-btn{
         color: white !important;
     }
-    .search-box {
-        padding: 20px;
-        height: 40px;
-        left: -3rem;
-        position: absolute;
-        top: 0.9rem;
+   .search-box{
+        position: relative;
+   }
+   .search-btn {
+        right: 0.1rem;
+        top: 0.2rem;
     }
-    .search-box:hover > .search-txt{
-        width: 100px ;
+    .search-box:hover > .search-txt,
+    .search-box:active > .search-txt{
+        width: 100%;
+        opacity: 1;
+        top: 4rem;
+        transition: all 0.3s ease-in-out;
     }
-    .search-box:hover > .search-btn{
-        opacity: 0;
-        transition: all 0.5s ease-in-out;
+    .search-btn:hover > .search-btn{
+        color: rgba(255, 255, 255, 0.5) !important;
     }  /* /END SERCH BAR */
 }
 /* Small devices (portrait tablets and large phones, 667px and down) */
@@ -73,6 +80,15 @@
         .main-text-container h1 {
             font-size: 2.9rem !important;
         }
+    }
+    @media only screen and (max-height: 880px) {
+        .topnav .webtext {
+            right: 1.5rem !important;
+        }
+        .topnav .logoweb-text {
+            margin-left: 0 !important;
+        }
+        
     }
     
     .main-text-container {
@@ -151,6 +167,8 @@
     /* NAVBAR LEFT [SMALL SCREEN]*/
     @media only screen and (max-width: 900px) {    
             @media only screen and (max-height: 1024px) {
+
+                
                 .fourth-section {
                     min-height: 20vh;
                 }
@@ -171,13 +189,9 @@
             left: 40%;
         }
         
-        .topnav .logoweb-text {
-            margin-left: 2.5rem;
-            margin-top: 2rem;
-        }
+        
         .topnav ul li{
             display: none;
-            margin-top: 2rem;
         }
         .topnav ul li:nth-of-type(3){
             display: inline-block;
@@ -257,10 +271,25 @@
 
 /* Extra large devices (large laptops and desktops, 1024px and down) */
 @media only screen and (max-width: 1024px) {
+    @media only screen and (max-height: 768px) {
+        .main-text-container h1 {
+            font-size: 3.5rem !important;
+        }
+    }
+
     :root{
         font-size: 20px;
     }
 
+    .topnav ul li {
+        padding: 0px 1rem;
+    }
+    .topnav .webtext {
+        right: -0.5rem;
+    }
+    .topnav .logoweb-text {
+        margin-left: 3.8rem;
+    }
     .textCard {
         width: 715px;
     }
@@ -279,7 +308,7 @@
     }
 
     .swiper_button-box{
-        top: 19rem;
+        top: 21rem;
     }
 
     .swiper-slide-active {
